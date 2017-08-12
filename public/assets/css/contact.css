@@ -1,0 +1,62 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+#contactButton { 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  /*background: teal;*/
+  color: white;
+  border: 1px solid white;
+}
+
+#contactButton:hover { background: #727272; }
+#contactButton:active { background: #444; }
+
+#contactFormContainer { 
+  display: none;
+
+  border: 6px solid #444; 
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+}
+
+h1.contactFormItem{
+  margin: 0;
+}
+
+input.contactFormItem, textarea.contactFormItem { 
+  margin: .8em auto;
+  font-family: inherit; 
+  text-transform: inherit; 
+  font-size: inherit;
+
+  color: pink;
+  
+  display: block; 
+  width: 280px; 
+  padding: .4em;
+}
+
+textarea.contactFormItem {
+  height: 80px;
+  resize: none;
+}
+
+#contactFormButton { 
+  width: 140px;
+  display: inline-block;
+  
+  background: #3AAA64;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 30px;
+}
