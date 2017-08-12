@@ -1,5 +1,5 @@
 # nisargnp
-** My personal website, built on Bootstrap and jQuery. Running on an ExpressJS server.**
+My personal website, built on Bootstrap and jQuery. Running on an ExpressJS server.
 
 ## Screenshots
 
