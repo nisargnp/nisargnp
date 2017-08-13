@@ -21,6 +21,28 @@ jQuery(document).ready(function($) {
     
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
-    
 
+
+    // Smooth scrolling
+    $('a[href*=\\#]').on('click', function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top-20}, 500);
+    });
+
+    // contact form show
+    $('#contactButton').click(function() {
+        $('#contactFormContainer').fadeToggle();
+    });
+  
+    // contact form hide
+    $(document).mouseup(function (e) {
+        var container = $("#contactFormContainer");
+
+        if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            container.fadeOut();
+        }
+    });
+    
 });
