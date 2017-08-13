@@ -515,6 +515,7 @@ iframe {
 .footer .fa-heart {
   color: #fb866a;
 }
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .header {
@@ -547,9 +548,22 @@ iframe {
   }
 }
 
+#email_address {
+  display: none;
+}
+
 @media(max-width: 991px) {
-  #work_outline {
+  #work_outline_section {
     display: none;
+  }
+}
+
+@media(max-width: 767px) {
+  #info_section {
+    display: none;
+  }
+  #email_address {
+    display: inline;
   }
 }
 

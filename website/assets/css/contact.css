@@ -1,0 +1,28 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+#contactButton { 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  /*background: teal;*/
+  color: white;
+  border: 1px solid white;
+}
+
+#contactButton:hover { background: #727272; }
+#contactButton:active { background: #444; }
+
+#contactFormContainer { 
+  display: none;
+
+  border: 6px solid #444; 
+  padding: 2em;
+  width: 580px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+}
