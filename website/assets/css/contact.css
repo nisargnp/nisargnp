@@ -12,6 +12,13 @@
 #contactButton:hover { background: #727272; }
 #contactButton:active { background: #444; }
 
+#resumeButton:hover { background: #727272; }
+#resumeButton:active { background: #444; }
+
+#contactCloseButton:hover { background: #727272; }
+#contactCloseButton:active { background: #444; }
+
+
 #contactFormContainer { 
   display: none;
 
@@ -25,4 +32,13 @@
   left:50%;
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%)
+}
+
+#contactCloseButton {
+  position:absolute; top:0; right:0;
+  color: white;
+  background: #3AAA64;
+  border-color: #444444;
+  width: 30px;
+  height: 25px;
 }

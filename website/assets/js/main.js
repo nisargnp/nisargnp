@@ -31,7 +31,14 @@ jQuery(document).ready(function($) {
 
     // contact form show
     $('#contactButton').click(function() {
+        event.preventDefault();
         $('#contactFormContainer').fadeToggle();
+    });
+
+    // contact form hide
+    $('#contactCloseButton').click(function() {
+        event.preventDefault();
+        $('#contactFormContainer').fadeOut();
     });
   
     // contact form hide
