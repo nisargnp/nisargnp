@@ -1,5 +1,14 @@
 @import "https://fonts.googleapis.com/css?family=Raleway";
 
+#resumeButton { 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  /*background: teal;*/
+  color: white;
+  border: 1px solid white;
+}
+
 #contactButton { 
   -webkit-user-select: none; /* Chrome/Safari */        
   -moz-user-select: none; /* Firefox */
@@ -8,6 +17,16 @@
   color: white;
   border: 1px solid white;
 }
+
+#contactCloseButton { 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  /*background: teal;*/
+  color: white;
+  border: 1px solid white;
+}
+
 
 #contactButton:hover { background: #727272; }
 #contactButton:active { background: #444; }
