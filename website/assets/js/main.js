@@ -32,7 +32,16 @@ jQuery(document).ready(function($) {
     // contact form show
     $('#contactButton').click(function() {
         event.preventDefault();
-        $('#contactFormContainer').fadeToggle();
+
+        var width = $(window).width();
+
+        console.log(width);
+        if (width < 768) {
+            window.open("https://goo.gl/forms/RkuiupQxLuwpWdVP2", "_blank");
+        } else {
+            $('#contactFormContainer').fadeToggle();
+        }
+        
     });
 
     // contact form hide

@@ -43,7 +43,8 @@
 
   border: 6px solid #444; 
   padding: 2em;
-  width: 580px;
+  width: 50%;
+  height: 90%;
   text-align: center;
   background: #fff;
   position: fixed;
