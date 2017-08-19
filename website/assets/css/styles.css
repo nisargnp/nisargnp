@@ -516,7 +516,59 @@ iframe {
   color: #fb866a;
 }
 
+/*
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+*/
 
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+#resumeButton, #contactButton, #contactCloseButton { 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  /*background: teal;*/
+  color: white;
+  border: 1px solid white;
+}
+
+#contactButton, #resumeButton {
+  width: 175px;
+}
+
+#contactButton:hover, #contactButton:active,
+#resumeButton:hover, #contactButton:active,
+#contactCloseButton:hover, #contactButton:active { 
+  background: #727272;
+}
+
+#contactFormContainer { 
+  display: none;
+
+  border: 6px solid #444; 
+  padding: 2em;
+  width: 50%;
+  height: 90%;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+}
+
+#contactCloseButton {
+  position:absolute; top:0; right:0;
+  color: white;
+  background: #3AAA64;
+  border-color: #444444;
+  width: 4%;
+  height: 4%;
+  margin:0;
+  padding:0;
+}
 
 #email_address {
   display: none;
@@ -527,6 +579,10 @@ iframe {
 }
 
 /* Extra small devices (phones, less than 768px) */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/* Ex-Large devices (large desktops, 1200px and up) */
 @media (max-width: 767px) {
   .header {
     text-align: center;
@@ -539,7 +595,7 @@ iframe {
     float: none !important;
     text-align: center;
   }
-  .header .btn {
+  #contactButton, #resumeButton {
     margin-top: 30px;
     float: none !important;
     width: 100%;
@@ -547,23 +603,11 @@ iframe {
   .project-image {
     margin-bottom: 15px;
   }
-
-  /* Custom changes */
   #info_section {
     display: none;
   }
   #email_address {
     display: inline;
-  }
-}
-
-/* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
-/* Ex-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1400px) {
-  .container {
-    width: 1360px;
   }
 }
 
@@ -575,3 +619,12 @@ iframe {
     margin-top: 10px;
   }
 }
+
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1360px;
+  }
+}
+
+
