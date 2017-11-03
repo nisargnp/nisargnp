@@ -29,7 +29,8 @@ jQuery(document).ready(function($) {
         $('html,body').animate({scrollTop:$(this.hash).offset().top-20}, 500);
     });
 
-    // contact form show
+    // contact form show/
+    /*
     $('#contactButton').click(function() {
         event.preventDefault();
 
@@ -43,6 +44,7 @@ jQuery(document).ready(function($) {
         }
         
     });
+    */
 
     // contact form hide
     $('#contactCloseButton').click(function() {
